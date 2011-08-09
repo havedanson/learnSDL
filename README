@@ -1,0 +1,18 @@
+
+
+This is just a simple project I am using to learn SDL
+
+I am following this dude's tutorial, the purpose of this whole exercise it to learn some game development stuff, get better at emacs and learn git. 
+
+Very ambitious?? maybe... I'm just learning at a slow pace
+
+
+ANYWAYS here's some basic commands. 
+
+to make the project just type in 
+
+make
+
+to clean you can do 
+
+make clean
