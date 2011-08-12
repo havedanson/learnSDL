@@ -25,6 +25,8 @@ class CEvent {
   
   virtual void OnMouseMove(int mX, int mY, int relX, int relY, bool left, bool right, bool middle);
 
+  virtual void OnMouseWheel(bool up, bool down);
+
   virtual void OnLButtonDown(int mX, int mY);
   
   virtual void OnLButtonUp(int mX, int mY);

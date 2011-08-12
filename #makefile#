@@ -4,7 +4,7 @@ CC=g++
 
 #CFlags sets the compiler options
 CFLAGS=-c -g -fpermissive -Wall
-LDFLAGS= -lSDL -lSDL_image
+LDFLAGS= -lSDL 
 SOURCES= CApp.cpp CSurface.cpp CEvent.cpp
 OBJECTS = $(SOURCES:.cpp=.o)
 EXECUTABLE = learnSdl

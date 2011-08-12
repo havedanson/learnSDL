@@ -11,7 +11,7 @@ class CSurface {
   static SDL_Surface * OnLoad(char * File);
   static bool OnDraw(SDL_Surface* surfDest, SDL_Surface * surfSource, int x , int y);
   static bool OnDraw(SDL_Surface * surfDest, SDL_Surface * surfSource, int x, int y, int x2, int y2, int w, int h);
-
+  static bool CSurface::Transparent(SDL_Surface * surfDest, int R, int G, int B);
 
 };
 #endif
