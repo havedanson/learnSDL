@@ -1,5 +1,5 @@
 #include "CApp.h"
-
+#include <iostream>
 
 CApp::CApp()
 {
@@ -100,6 +100,10 @@ void CApp::OnLoop(){
 
 void CApp::OnRender()
 {
+
+  CSurface::OnDraw(_surfaceDisplay,_surfaceGrid,0,0);
+  
+  
   for(int i = 0; i < 9; i++)
     {
       int x = (i % 3) * 200;
@@ -115,7 +119,8 @@ void CApp::OnRender()
 	}
     }
 
-  CSurface::OnDraw(_surfaceDisplay,_surfaceGrid,0,0);
+
+
   SDL_Flip(_surfaceDisplay);
   
 }
@@ -167,7 +172,7 @@ void CApp::OnLButtonDown(int mX, int mY)
 {
   int id = mX / 200; 
   id = id + ((mY / 200) * 3);
-
+  std::cout << "hi" << std::endl;
   if(_grid[id] != GRID_TYPE_NONE)
     {
       return;
